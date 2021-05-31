@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\View\Home\Index.pt-br.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.pt-br.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\View\Home\Index.en-us.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.en-us.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\View\Shared\_CulturePartial.pt-br.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>_CulturePartial.pt-br.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\View\Shared\_CulturePartial.en-us.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>_CulturePartial.en-us.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\View\Home\Index.pt-br.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.pt-br.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\View\Home\Index.en-us.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.en-us.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\View\Shared\_CulturePartial.pt-br.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>_CulturePartial.pt-br.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\View\Shared\_CulturePartial.en-us.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>_CulturePartial.en-us.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
